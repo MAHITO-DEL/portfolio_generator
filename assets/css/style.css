@@ -17,7 +17,7 @@
     --primary-light: var(--red-glow);
     --accent-blue: var(--blue-primary);
     --accent-cyan: var(--blue-glow);
-    --header-bg: #7F1D1D;
+    --header-bg: #0D0D0D;
     --nav-text: #3B82F6;
     --nav-hover: #60A5FA;
     --header-border: rgba(37, 130, 246, 0.2);
@@ -47,7 +47,7 @@ body {
 }
 .site-header.scrolled {
     padding: 0.75rem 2rem;
-    background: #6b1818;
+    background: #0D0D0D;
     backdrop-filter: blur(10px);
 }
 .header-container {
@@ -58,7 +58,9 @@ body {
     font-size: 1.5rem; font-weight: 800; text-decoration: none;
     letter-spacing: -0.5px; display: flex; align-items: center; gap: 0.5rem;
     flex-shrink: 0;
-    background: linear-gradient(135deg, #FF4D4D, var(--nav-text));
+    background: linear-gradient(135deg, #B11226, #2563EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .logo span { font-weight: 900; }
 
@@ -740,3 +742,4 @@ body {
 #forgotModal  .btn-outline-secondary:hover { background: rgba(255,255,255,0.2) !important; }
 #registerModal .bg-light { background: rgba(255,255,255,0.1) !important; }
 #forgotModal .form-text { color: rgba(255,255,255,0.5) !important; }
+/*//////////////////////////////////////////////////////////////////////////////////////////*/

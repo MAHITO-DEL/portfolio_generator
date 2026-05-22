@@ -15,7 +15,7 @@
     <!-- ===== Fixed Header ===== -->
     <header class="site-header scrolled" id="header">
         <div class="header-container">
-            <a href="index.php" class="logo">Portfolio<span>Gen</span></a>
+            <a href="index.php" class="logo">PortfolioGen</a>
 
             <div class="search-container">
                 <input type="text" class="search-input" id="search-input" placeholder="Search portfolios…">
@@ -29,9 +29,9 @@
 
             <nav class="main-nav" id="main-nav">
                 <a href="index.php" class="nav-link">Home</a>
-                <a href="#" class="nav-link active">Explore</a>
-                <a href="#" class="nav-link">Templates</a>
-                <a href="#" class="nav-link">About</a>
+                <a href="index.php#showcase" class="nav-link">Explore</a>
+                <a href="generator.php" class="nav-link">Templates</a>
+                <a href="#about" class="nav-link">About</a>
             </nav>
 
             <div class="auth-buttons">

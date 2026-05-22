@@ -482,7 +482,7 @@
             </div>
             <nav class="main-nav" id="main-nav">
                 <a href="index.php" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Explore</a>
+                <a href="explore.php" class="nav-link">Explore</a>
                 <a href="generator.php" class="nav-link active">Templates</a>
                 <a href="#" class="nav-link">About</a>
             </nav>
