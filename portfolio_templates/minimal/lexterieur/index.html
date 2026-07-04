@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	L'Extérieur by Antigravity (Powered by HTML5 UP Aerial)
+	Free for personal and commercial use.
+-->
+<html>
+	<head>
+		<title>{{name}} | {{title}}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Dynamic Accent Styles */
+			:root {
+				--accent-color: #EF4444;
+				--accent-glow: rgba(239, 68, 68, 0.3);
+				--accent-hover: #DC2626;
+			}
+			body.accent-blue {
+				--accent-color: #3B82F6;
+				--accent-glow: rgba(59, 130, 246, 0.3);
+				--accent-hover: #2563EB;
+			}
+			body.accent-gold {
+				--accent-color: #F59E0B;
+				--accent-glow: rgba(245, 158, 11, 0.3);
+				--accent-hover: #D97706;
+			}
+			body.accent-green {
+				--accent-color: #10B981;
+				--accent-glow: rgba(16, 185, 129, 0.3);
+				--accent-hover: #059669;
+			}
+		</style>
+	</head>
+	<body class="is-preload theme-{{theme}} accent-{{accent}}">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			
+			<div id="main">
+
+				<!-- Hero/Header Viewport -->
+				<section id="hero-viewport">
+					<header id="header" class="glass-card">
+						<!-- Avatar / Profile Image if provided -->
+						<div class="avatar-container" style="display: {{profileImage}} ? 'block' : 'none';">
+							<img src="{{profileImage}}" class="avatar" alt="{{name}}" onerror="this.parentNode.style.display='none';">
+						</div>
+						<h1>{{name}}</h1>
+						<p class="professional-title">{{title}}</p>
+						<p class="bio-desc">{{bio}}</p>
+						<nav>
+							<ul>
+								{{social_links}}
+							</ul>
+						</nav>
+					</header>
+					
+					<!-- Scroll Down Indicator -->
+					<div class="scroll-indicator">
+						<a href="#sections-container" class="scroll-arrow">
+							<span class="arrow-text">View Portfolio</span>
+							<i class="icon solid fa-chevron-down bouncing"></i>
+						</a>
+					</div>
+				</section>
+
+				<!-- Dynamic Content Sections Container -->
+				<div id="sections-container">
+					<div class="sections-inner">
+						
+						{{skills_section}}
+
+						{{projects_section}}
+
+						{{experience_section}}
+
+						{{education_section}}
+
+						{{contact_section}}
+
+					</div>
+				</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<span class="copyright">&copy; {{name}}. All rights reserved. Design inspired by <a href="http://html5up.net">HTML5 UP</a>.</span>
+				</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { 
+				document.body.classList.remove('is-preload'); 
+			}
+			// Smooth scrolling for the chevron anchor
+			document.querySelector('.scroll-arrow')?.addEventListener('click', function(e) {
+				e.preventDefault();
+				const targetId = this.getAttribute('href');
+				const targetElement = document.querySelector(targetId);
+				if (targetElement) {
+					targetElement.scrollIntoView({ behavior: 'smooth' });
+				}
+			});
+		</script>
+	</body>
+</html>

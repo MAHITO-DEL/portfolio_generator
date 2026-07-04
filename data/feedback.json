@@ -1,0 +1,17 @@
+[
+    {
+        "id": "fb_6a11db691cbd16.44954273",
+        "email": "sabirfatima2005@gmail.com",
+        "rating": 5,
+        "message": "a perfect website it helps a lot and i personnaly used it more than once",
+        "created_at": "2026-05-23 18:52:57"
+    },
+    {
+        "id": "fb_6a11dffae5d2c6.89774526",
+        "email": "test@gmail.com",
+        "rating": 5,
+        "message": "good website perfect",
+        "created_at": "2026-05-23 19:12:26",
+        "isUserComment": true
+    }
+]
